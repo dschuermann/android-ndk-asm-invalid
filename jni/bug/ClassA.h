@@ -5,12 +5,10 @@
 #include <ostream>
 #include <stdint.h>
 
-#include "ClassB.h"
-
-class ClassA : public ClassB
+class ClassA : public std::basic_streambuf<char, std::char_traits<char> >, public std::ostream
 {
 public:
-	ClassA(std::ostream& output, const uint32_t test);
+	ClassA(const uint32_t foo);
 
 	virtual ~ClassA();
 };

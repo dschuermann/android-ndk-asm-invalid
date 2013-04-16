@@ -1,13 +1,11 @@
 #include "ClassA.h"
 #include <netinet/in.h>
 
-ClassA::ClassA(std::ostream& output, const uint32_t test)
-: ClassB(output)
+ClassA::ClassA(const uint32_t foo)
 {
-	uint32_t be = htonl(test);
+	uint32_t be = htonl(foo);
 }
 
 ClassA::~ClassA()
 {
-
 }
