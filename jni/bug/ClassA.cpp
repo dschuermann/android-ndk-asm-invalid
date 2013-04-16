@@ -7,8 +7,6 @@ ClassA::ClassA(std::ostream& output, const uint32_t test)
 	uint32_t be = htonl(test);
 }
 
-
-
 ClassA::~ClassA()
 {
 

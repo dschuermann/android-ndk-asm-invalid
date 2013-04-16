@@ -9,12 +9,10 @@
 
 class ClassA : public ClassB
 {
-	public:
+public:
+	ClassA(std::ostream& output, const uint32_t test);
 
-		ClassA(std::ostream& output, const uint32_t test);
-
-		virtual ~ClassA();
-
+	virtual ~ClassA();
 };
 
 #endif /* CLASSA_H_ */
