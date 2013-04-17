@@ -1,12 +1,15 @@
-NDK: "invalid 'asm': operand number out of range" when compiling for x86 using gcc 4.6/4.7 (gcc 4.4.3 works)
+Corresponding bug report http://code.google.com/p/android/issues/detail?id=54465
 
+
+NDK: "invalid 'asm': operand number out of range" when compiling for x86 using gcc 4.6/4.7 (gcc 4.4.3 works)
+------------------------------------------------------------------------------------------------------------
 
 Host OS: Debian testing (also fails on Ubuntu and other host os)
 Android NDK version: 8e (newest)
 Platform targeted by your project: x86 (armeabi works)
 
 STEPS TO REPRODUCE:
-1. Get minimal test case from https://github.com/dschuermann/android-ndk-asm-invalid
+1. Get minimal test case from github.com/dschuermann/android-ndk-asm-invalid
 2. Execute ndk-build
 3. Following error will happen: "jni/bug/ClassA.cpp:6:16: error: invalid 'asm': operand number out of range"
 
